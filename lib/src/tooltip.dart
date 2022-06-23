@@ -155,7 +155,7 @@ class SimpleTooltipState extends State<SimpleTooltip> with RouteAware {
 
   addObfuscateItem(ObfuscateTooltipItemState item) {
     _obfuscateItems.add(item);
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       doCheckForObfuscation();
       doShowOrHide();
     });

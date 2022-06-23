@@ -56,7 +56,7 @@ class ObfuscateTooltipItemState extends State<ObfuscateTooltipItem> with Widgets
 
   @override
   void dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     _intervalSubscription.cancel();
     _removeFromTooltips(widget.tooltipKeys);
     super.dispose();
